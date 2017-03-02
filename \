@@ -1,0 +1,36 @@
+#!/bin/python
+import json
+import time
+
+#def load():
+#	with open("/root/json.bak") as json_file:
+#		data=json.load(json_file)
+data=[json.loads(line) for line in open('/root/json.bak')]
+#data=[json.read(line) for line in open('/root/json.bak')]
+#print data[0]
+#		return data
+#print data[0]['item']
+
+
+#print data
+#odata=data.keys()
+#print odata
+#print data['item']
+
+with open("/root/json.bak" ) as json_file:
+	data=json.load(json_file)
+
+
+print data
+for i in data('item')
+	print i.get('item')
+
+
+
+print type(data)
+udata=json.dumps(data)
+print udata['item']
+print type(udata)
+idata=json.loads(udata)
+print idata
+print type(idata)
